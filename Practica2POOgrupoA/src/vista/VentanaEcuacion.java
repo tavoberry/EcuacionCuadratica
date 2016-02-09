@@ -40,6 +40,7 @@ public class VentanaEcuacion extends javax.swing.JFrame {
         lblX2 = new javax.swing.JLabel();
         lblResultado = new javax.swing.JLabel();
         lblResultado2 = new javax.swing.JLabel();
+        btnBorrar = new javax.swing.JButton();
 
         jTextField2.setText("jTextField2");
 
@@ -73,6 +74,8 @@ public class VentanaEcuacion extends javax.swing.JFrame {
 
         lblResultado2.setText("Resultado de la Ecuación");
 
+        btnBorrar.setText("Borrar");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -96,8 +99,11 @@ public class VentanaEcuacion extends javax.swing.JFrame {
                                     .addComponent(jLabel3)))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(btnObtener)
-                                .addGap(69, 69, 69)
-                                .addComponent(btnResolver, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btnResolver, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btnBorrar, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(21, 21, 21))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(51, 51, 51)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -109,7 +115,7 @@ public class VentanaEcuacion extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(lblResultado2, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -132,10 +138,11 @@ public class VentanaEcuacion extends javax.swing.JFrame {
                 .addComponent(lblResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblResultado2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnObtener)
-                    .addComponent(btnResolver))
+                    .addComponent(btnResolver)
+                    .addComponent(btnBorrar))
                 .addContainerGap())
         );
 
@@ -178,6 +185,7 @@ public class VentanaEcuacion extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton btnBorrar;
     public javax.swing.JButton btnObtener;
     public javax.swing.JButton btnResolver;
     private javax.swing.JLabel jLabel1;

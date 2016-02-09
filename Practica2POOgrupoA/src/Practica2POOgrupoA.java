@@ -15,11 +15,12 @@ import vista.VentanaEcuacion;
  */
 public class Practica2POOgrupoA {
     public static void main(String []arg){
-        VentanaEcuacion ventana = new VentanaEcuacion();
-        EcuacionCuadratica ecuacion = new EcuacionCuadratica(0,0,0);
-        ControladorVentanaEcuacion controlador = new ControladorVentanaEcuacion(ecuacion,ventana);
+        VentanaEcuacion v; //Declarar el objeto v
+        v = new VentanaEcuacion(); //Instanciar la clase
+        EcuacionCuadratica ec = new EcuacionCuadratica(0,0,0);
+        ControladorVentanaEcuacion ctr = new ControladorVentanaEcuacion(ec,v);
         
-        ventana.setVisible(true);
-        ventana.setLocationRelativeTo(null);
+        v.setVisible(true);
+        v.setLocationRelativeTo(null);
     }
 }

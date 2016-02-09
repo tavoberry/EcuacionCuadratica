@@ -26,6 +26,7 @@ public class ControladorVentanaEcuacion implements ActionListener{
         this.ecuacion = ecuacion;
         ventana.btnObtener.addActionListener(this);
         ventana.btnResolver.addActionListener(this);
+        ventana.btnBorrar.addActionListener(this);
     }
     
     @Override
@@ -45,6 +46,15 @@ public class ControladorVentanaEcuacion implements ActionListener{
                     ecuacion.resolverEcuacion(ecuacion.getX1()));
             ventana.lblResultado2.setText("Resultado de la ecuación para X2 = "+
                     ecuacion.resolverEcuacion(ecuacion.getX2()));
+        }
+        if (e.getSource()==ventana.btnBorrar){
+            ventana.txtA.setText("0");
+            ventana.txtB.setText("0");
+            ventana.txtC.setText("0");
+            ventana.lblX1.setText("x1");
+            ventana.lblX2.setText("x2");
+            ventana.lblResultado.setText("Resultado de la ecuación para X1");
+            ventana.lblResultado2.setText("Resultado de la ecuación para X2");
         }
     }
 }
